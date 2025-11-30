@@ -227,6 +227,7 @@ export GROQ_API_KEY="your_api_key_here"
 setx GROQ_API_KEY "your_api_key_here"
 
  **command prompt**
+ 
  set GROQ_API_KEY="your_api_key_here"
 
 ## Notes
