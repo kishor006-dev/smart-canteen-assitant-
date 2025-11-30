@@ -1,4 +1,4 @@
-# smart-canteen-assitant-
+# smart-canteen-assitant
 AI-based Smart Canteen Assistant Project
 # 🍴 Smart Canteen AI Assistant
 **Subtitle:** AI-powered Smart Canteen Assistant for students and staff with real-time chat, menu management, and order tracking.  
