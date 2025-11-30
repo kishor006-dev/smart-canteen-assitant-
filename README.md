@@ -89,7 +89,7 @@ Then MongoDB is successfully installed 🎉
 
 **Run the following commands:**
 
-  sudo apt update
+  sudo apt update &&
   sudo apt install -y mongodb
 
 
