@@ -49,69 +49,122 @@ Smart-Canteen-AI/
 ---
 
 ## Database setup
-**mongo db installation**
-🔧 1️⃣ Install MongoDB
+Here is a clean, step-by-step **Local MongoDB Installation Guide** formatted for your README — covering **Windows, Mac, and Linux**:
 
-Your application uses MongoDB as the backend database.
-Install it using the instructions below depending on your OS.
+---
 
-Search and download MongoDB Community Server
+## 🗄️ Local MongoDB Installation Guide
 
-Search keyword: "MongoDB Community Server Download"
+If you prefer running MongoDB locally instead of using MongoDB Atlas, follow the steps based on your operating system.
 
-Run the installer and select:
+---
 
-✔ Complete Install
+### 🪟 **Windows Installation**
 
-✔ Install MongoDB as a Service
+#### 1️⃣ Download MongoDB Community Server
 
-✔ Include MongoDB Compass (optional but recommended)
+Search: **"MongoDB Community Server Download"**
+Download from the official website and run the installer.
 
-After installation, MongoDB should run automatically.
+#### 2️⃣ During installation, select:
 
-**🪟 Windows Installation**
+✔ **Complete Installation**
+✔ **Install MongoDB as a Service**
+✔ **Include MongoDB Compass (optional)**
 
-**To manually start it, open Command Prompt (Admin):**
+#### 3️⃣ Start MongoDB Service (if not running automatically):
 
-  net start MongoDB
+Open **Command Prompt as Administrator**:
 
-**Verify MongoDB is working:**
-
-  mongosh
-
-**If you see something like:**
-
-  test>
-
-Then MongoDB is successfully installed 🎉
-
-**Linux(Ubuntu/Debian) Installation**
-
-**Run the following commands:**
-
-  sudo apt update &&
-  sudo apt install -y mongodb
+net start MongoDB
 
 
-**Start the service:**
+#### 4️⃣ Verify Installation
 
-  sudo systemctl start mongodb
-
-
-**Enable auto-start:**
-
-  sudo systemctl enable mongodb
+mongosh
 
 
-**Verify MongoDB is running:**
+If you see:
 
-   sudo systemctl status mongodb
 
-**Test the database connection:**
+test>
 
-   mongosh
 
-**If you see a > prompt, MongoDB is ready**
+MongoDB is running successfully 🎉
+
+
+### 🍎 **Mac Installation (Intel / M1 / M2)**
+
+> Requires **Homebrew**. If not installed, run:
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+
+#### 1️⃣ Install MongoDB
+
+brew tap mongodb/brew
+brew install mongodb-community
+
+
+#### 2️⃣ Start MongoDB Service
+
+brew services start mongodb-community
+
+
+#### 3️⃣ Verify
+
+mongosh
+
+
+If the Mongo shell starts, setup is complete 🎉
+
+
+### 🐧 **Linux (Ubuntu / Debian)**
+
+#### 1️⃣ Update System
+
+sudo apt update
+
+
+#### 2️⃣ Install MongoDB
+
+sudo apt install -y mongodb
+
+
+#### 3️⃣ Start Service
+
+
+sudo systemctl start mongodb
+
+
+#### 4️⃣ Enable Auto-Start
+
+
+sudo systemctl enable mongodb
+
+
+#### 5️⃣ Check Status
+
+sudo systemctl status mongodb
+
+#### 6️⃣ Verify
+
+mongosh
+
+If you see a database shell prompt (`>`) — you're ready 🎉
+
+
+### 🔗 Default Local Database Connection
+
+After installation, the default MongoDB connection string for your project is:
+
+mongodb://localhost:27017
+
+### ⚠️ Common Issue: "mongosh not found"
+
+Install mongosh manually:
+
+npm install -g mongosh
 
  ## Backend setup
 
