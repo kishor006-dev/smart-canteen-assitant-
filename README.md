@@ -116,26 +116,27 @@ Then MongoDB is successfully installed 🎉
 
 1. Create and activate a virtual environment:
 
-python -m venv venv
+   python -m venv venv
 # Linux/Mac
-source venv/bin/activate
+   source venv/bin/activate
 # Windows
-venv\Scripts\activate
+   venv\Scripts\activate
+   
 2.move to path
 
-cd Smart-Canteen-Assistant 
+   cd Smart-Canteen-Assistant 
 
 3. Install dependencies:
 
-pip install -r backend/requirements.txt
+   pip install -r backend/requirements.txt
 
 4.set a API key
 
-see environment variables below
+   see environment variables below
 
 5. Start the backend server:
 
-uvicorn backend.main:app --reload
+   uvicorn backend.main:app --reload
 
 ## Frontend Setup
 
