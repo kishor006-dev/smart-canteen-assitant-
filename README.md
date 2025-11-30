@@ -47,7 +47,14 @@ Smart-Canteen-AI/
 - Groq API Key for AI functionality (set as environment variable `GROQ_API_KEY`)
 - VS code installation and add extension live server and any required
 
----
+## 📂 Project Repository
+
+You can view or clone the full project here:  
+[Smart‑Canteen‑AI on GitHub](https://github.com/kishor006-dev/Smart-Canteen-Assitant)
+
+Or download ZIP:  
+https://github.com/kishor006-dev/Smart-Canteen-Assitant/archive/refs/heads/main.zip
+
 
 ## Database setup
 
