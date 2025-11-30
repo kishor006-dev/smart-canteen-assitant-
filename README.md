@@ -48,7 +48,7 @@ Smart-Canteen-AI/
 
 ---
 
-## Backend Setup
+## Database setup
 **mongo db installation**
 🔧 1️⃣ Install MongoDB
 
@@ -113,8 +113,9 @@ Then MongoDB is successfully installed 🎉
 
 **If you see a > prompt, MongoDB is ready**
 
+ ## Backend setup
 
-1. Create and activate a virtual environment:
+1.Create and activate a virtual environment:
 
    python -m venv venv
 # Linux/Mac
@@ -134,7 +135,7 @@ Then MongoDB is successfully installed 🎉
 
    see environment variables below
 
-5. Start the backend server:
+5.Start the backend server:
 
    uvicorn backend.main:app --reload
 
